@@ -1,4 +1,4 @@
-import argparse
+import argparse, os
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
@@ -129,7 +129,7 @@ def test(epoch, best_acc):
           100. * test_acc)
 
     if test_acc >= best_acc:
-        torch.save(model.state_dict(), './models/{}.pth'.format(model_name))
+        torch.save(model.state_dict(), os.path.join('models','{}.pth'.format(model_name)))
 
     return test_loss, test_acc
 
@@ -137,7 +137,7 @@ model_name = '{}-{}-{}-{}'.format(model.__class__.__name__, model.mode, model.es
 print 'Model : {}'.format(model_name.replace('-', ' - '))
 
 best_acc = 0.0
-log_file = open('./logs/{}.log'.format(model_name), 'w')
+log_file = open(os.path.join('logs', '{}.log'.format(model_name)), 'w')
 log_file.write('Epoch,TrainLoss,TestLoss,TestAccuracy\n')
 for epoch in range(1, args.epochs + 1):
     train_loss = train(epoch)
