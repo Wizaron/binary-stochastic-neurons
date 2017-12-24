@@ -129,7 +129,7 @@ def test(epoch, best_acc):
           100. * test_acc)
 
     if test_acc >= best_acc:
-        torch.save(model.state_dict(), './models/{}.npy'.format(model_name))
+        torch.save(model.state_dict(), './models/{}.pth'.format(model_name))
 
     return test_loss, test_acc
 
