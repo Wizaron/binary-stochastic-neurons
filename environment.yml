@@ -1,0 +1,41 @@
+name: pytorch-binary-stochastic-neuron
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - ca-certificates=2017.08.26=h1d4fec5_0
+  - certifi=2017.11.5=py27h71e7faf_0
+  - cffi=1.11.2=py27ha7929c6_0
+  - cudatoolkit=8.0=3
+  - freetype=2.8=hab7d2ae_1
+  - intel-openmp=2018.0.0=hc7b2577_8
+  - jpeg=9b=h024ee3a_2
+  - libedit=3.1=heed3624_0
+  - libffi=3.2.1=hd88cf55_4
+  - libgcc-ng=7.2.0=h7cc24e2_2
+  - libpng=1.6.32=hbd3595f_4
+  - libstdcxx-ng=7.2.0=h7a57d05_2
+  - libtiff=4.0.9=h28f6b97_0
+  - mkl=2018.0.1=h19d6760_4
+  - ncurses=6.0=h9df7e31_2
+  - numpy=1.13.3=py27hbcc08e0_0
+  - olefile=0.44=py27h4bd3e3c_0
+  - openssl=1.0.2n=hb7f436b_0
+  - pillow=4.3.0=py27h353bd0c_1
+  - pip=9.0.1=py27ha730c48_4
+  - pycparser=2.18=py27hefa08c5_1
+  - python=2.7.14=h1571d57_29
+  - readline=7.0=ha6073c6_4
+  - setuptools=36.5.0=py27h68b189e_0
+  - six=1.11.0=py27h5f960f1_1
+  - sqlite=3.20.1=hb898158_2
+  - tk=8.6.7=hc745277_3
+  - wheel=0.30.0=py27h2bc6bb2_1
+  - xz=5.2.3=h55aa19d_2
+  - zlib=1.2.11=ha838bed_2
+  - pytorch=0.3.0=py27_cuda8.0.61_cudnn7.0.3hf383a3f_4
+  - torchvision=0.2.0=py27hfb27419_1
+  - pip:
+    - torch==0.3.0.post4
+prefix: /home/jcmaxwell/miniconda2/envs/pytorch-binary-stochastic-neuron
+
