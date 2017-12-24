@@ -133,7 +133,7 @@ def test(epoch, best_acc):
 
     return test_loss, test_acc
 
-model_name = '{}-{}-{}'.format(model.__class__.__name__, model.mode, model.estimator)
+model_name = '{}-{}-{}-{}'.format(model.__class__.__name__, model.mode, model.estimator, args.slope_annealing)
 print 'Model : {}'.format(model_name.replace('-', ' - '))
 
 best_acc = 0.0
