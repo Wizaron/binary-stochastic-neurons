@@ -17,4 +17,3 @@
 | BinaryNet-Stochastic-ST-True             | 89     | 0.9717   |
 | NonBinaryNet-None-None-False             | 76     | 0.9734   |
 | NonBinaryNet-None-None-True              | 50     | 0.9714   |
-
