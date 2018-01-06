@@ -142,6 +142,7 @@ log_file.write('Epoch,TrainLoss,TestLoss,TestAccuracy\n')
 for epoch in range(1, args.epochs + 1):
     train_loss = train(epoch)
     test_loss, test_acc = test(epoch, best_acc)
+    best_acc = max(test_acc, best_acc)
     log_file.write('{},{},{},{}\n'.format(epoch, train_loss, test_loss, test_acc))
     log_file.flush()
 log_file.close()
