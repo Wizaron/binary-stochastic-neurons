@@ -97,10 +97,10 @@ def train(epoch):
         loss.backward()
         optimizer.step()
 
-        train_loss += loss
+        train_loss += loss.data
 
     train_loss /= len(train_loader)
-    train_loss = train_loss.data[0]
+    train_loss = train_loss[0]
 
     print 'Training Loss : {}'.format(train_loss)
 
